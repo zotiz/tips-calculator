@@ -1,0 +1,110 @@
+
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.container{
+  box-shadow: rgba(47, 47, 130, 0.25) 10px 10px 12px -2px, rgba(97, 95, 95, 0.3) 0px 3px 7px -3px;
+  max-width: 400px;
+  height: auto;
+  position:relative;
+  background-color:  rebeccapurple;
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  border-radius: 10px;
+  padding:15px;
+}
+label{
+font-size:18px;
+color:aliceblue;
+align-self: center;
+
+}
+.field{
+display: grid;
+grid-template-columns: 200px auto;
+align-content: center;
+
+}
+header{
+text-align: center;
+color:rgb(255, 255, 255);
+
+padding:0 0 20px 0;
+}
+h1{
+text-shadow: 2px 2px 2px rgba(128, 0, 0, 1);
+}
+main{
+ text-align: center;
+  padding:10px 0;
+  height: 55%;
+  }
+
+input{
+  width: 60%;
+  font-size: 20px;
+  padding:10px;
+  border:none;
+  outline:none;
+  border-radius: 6px;
+  margin:20px;
+  box-shadow: 1px 2px 2px rebeccapurple;
+}
+input[type='text']{
+  background: rgb(195, 195, 213);
+}
+footer{
+  text-align: center;
+}
+
+button{
+  width: 60%;
+  font-size:20px;
+  padding: 10px;
+  margin:15px 0;
+  border-radius: 10px;
+  font-weight: 600;
+  border:none;
+  background-image:linear-gradient(to left top,#a8eb12, #3fe8f7);
+  color:blueviolet;
+  box-shadow: rgba(118, 118, 228, 0.25) 0px 6px 12px -2px, rgba(121, 120, 120, 0.3) 0px 3px 7px -3px;
+  transition: all 0.3s;
+}
+button:hover{
+  background-color:rgb(50, 220, 211);
+  transform: scale(1.02);
+  background-image:linear-gradient(to left bottom,#a8eb12, #3fe8f7);
+}
+.fb{
+  position: absolute;
+  bottom: 35px;
+  right:50px;
+  transition: all 0.3s;
+  background:#3fe8f7;
+  border-radius: 50%;
+}
+.fa-facebook{
+  font-size: 30px;
+  background-image:linear-gradient(to left bottom,#a8eb12, #3fe8f7);
+  color:rgb(73, 73, 212);
+  border-radius:50%;
+}
+.fb:hover{
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 400px) {
+  .field{
+display: grid;
+grid-template-columns: 150px 150px;
+align-content: center;
+  }
+  .fb{
+  position: absolute;
+  bottom: 35px;
+  right:30px;
+}
